@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">রোগীর অযু ও সালাত</string>
+
+    <string name="app_id">ca-app-pub-4780179345311976~3535300578</string>
+    <string name="app_banner">ca-app-pub-4780179345311976/7227967727</string>
+    <string name="admob_interstitial_id">ca-app-pub-4780179345311976/1956331880</string>
+
+<!--   <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+<!--   <string name="app_banner">ca-app-pub-3940256099942544/6300978111</string>-->
+<!--   <string name="admob_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>-->
+
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/circle_background"
+tools:context=".AboutUS">
+<com.google.android.gms.ads.AdView
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"
+    ads:adSize="BANNER"
+    ads:adUnitId="@string/app_banner">
+</com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:id="@+id/aboutHeader"
+        android:layout_below="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#015283"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lisabojcharulota"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/versionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="monospace"
+            android:text="Version 1.06"
+            android:textColor="@color/islamicGoldLight"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aboutActions"
+        android:layout_below="@+id/aboutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/btnAbout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_green"
+            android:fontFamily="@font/lisabojcharulota"
+            android:gravity="center"
+            android:onClick="showAbout"
+            android:padding="10dp"
+            android:text="আমাদের সম্পর্কে"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnPrivacy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_pill_light"
+            android:fontFamily="@font/lisabojcharulota"
+            android:gravity="center"
+            android:onClick="showPrivacy"
+            android:padding="10dp"
+            android:text="গোপনীয়তা নীতি"
+            android:textColor="@color/islamicGreen"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+<ScrollView
+    android:id="@+id/scrollview"
+    android:layout_below="@+id/aboutActions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:background="@color/white"
+                android:id="@+id/webview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+<TableLayout
+    android:layout_alignParentBottom="true"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:stretchColumns="*">
+    <TableRow android:background="@color/white"  android:padding="5dp">
+        <TextView
+            android:onClick="shareHere"
+            android:background="@drawable/round_corner"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Share"
+            android:id="@+id/share"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:onClick="copyHere"
+            android:background="@drawable/round_corner"
+            android:id="@+id/copy"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Copy"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:layout_weight="1"/>
+
+    </TableRow>
+</TableLayout>
+</RelativeLayout>

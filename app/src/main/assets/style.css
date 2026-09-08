@@ -1,0 +1,53 @@
+@font-face { font-family: 'Persian'; src: url('font/amiriregular.ttf'); }
+@font-face { font-family: 'lisabojcharulota'; src: url('font/solaimanlipi.woff'); }
+body {text-align: justify;padding: 10px;}
+font {font-family: 'Persian';font-size:20px; color:#cc0029}
+span { color: #418400;}
+b, p { font-family: 'lisabojcharulota';font-size:20px;}  
+.rtl {
+    direction: rtl;
+    text-align: right;
+	font-family: 'Persian';font-size:20px; color:#cc0029
+} 
+
+h4, h3, .anchor{
+    font-family: 'lisabojcharulota';font-size:25px;
+}
+
+/* Additive styles for new content pages - does not alter rules above */
+.arabic {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Persian';
+    font-size: 22px;
+    color: #0d3b2e;
+    line-height: 1.9;
+}
+.translation {
+    font-family: 'lisabojcharulota';
+    font-size: 18px;
+    color: #1c1c1c;
+}
+.reference {
+    font-family: 'lisabojcharulota';
+    font-size: 14px;
+    color: #418400;
+}
+.dua-box {
+    background: #f4f1e8;
+    border: 1px solid #e0ded2;
+    border-radius: 10px;
+    padding: 14px;
+    margin: 12px 0;
+}
+.section-title {
+    font-family: 'lisabojcharulota';
+    font-size: 20px;
+    color: #0d3b2e;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    border-bottom: 2px solid #d4af37;
+    display: inline-block;
+    padding-bottom: 2px;
+}

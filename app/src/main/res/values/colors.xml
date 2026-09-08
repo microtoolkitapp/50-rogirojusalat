@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#f7791e</color>
+    <color name="colorPrimaryDark">#0a014b</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="Bbackcolor">#f7791e</color>
+    <color name="mainColor">#281e75</color>
+    <color name="xtracolor">#02a4ea</color>
+    <color name="buttoncolor">#ffffff</color>
+    <color name="questioncolor">#b61e00</color>
+    <color name="maincolor">#42973b3f</color>
+    <color name="green">#418400</color>
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yello">#FFA500</color>
+    <color name="allbg">#5ac9ed</color>
+    <color name="colorbtn">#1cb9ff40</color>
+    <color name="bgcolor">#f7f7f7</color>
+    <color name="primaryC">#ec1e24</color>
+
+    <!-- New professional Islamic palette (additive, does not replace old colors) -->
+    <color name="islamicGreen">#0d3b2e</color>
+    <color name="islamicGreenDark">#082821</color>
+    <color name="islamicGreenLight">#1e6b52</color>
+    <color name="islamicGold">#d4af37</color>
+    <color name="islamicGoldLight">#f0d97a</color>
+    <color name="cardBackground">#ffffff</color>
+    <color name="cardBackgroundAlt">#f4f1e8</color>
+    <color name="textPrimary">#1c1c1c</color>
+    <color name="textSecondary">#5c6b66</color>
+    <color name="dividerColor">#e0ded2</color>
+    <color name="favoriteRed">#c0392b</color>
+    <color name="headerBlue">#015283</color>
+</resources>
